@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: box;
+}
+
+body{
+    background-color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+
+}
+header nav{
+    width: 98vw;
+    height: 80px;
+    font-size: 16px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+}
+#pinterest-icon{
+    width: 35px;
+    height: 35px;
+    padding:  4px   ;
+}
+#pinterest-icon:hover{
+    background-color: #e9e9e9;
+    border-radius: 150px;
+}
+.first-list{
+    display: flex;
+}
+.first-list li{
+    list-style: none;
+    padding: 14px 12px;
+}
+.first-list a{
+    text-decoration: none;
+    color: black;
+}
+#inicio{
+    background-color: black;
+    color: white;
+    padding: 12px 12px;
+    border-radius: 25px;
+}
+.search{
+    flex-grow: 1;
+    height: 48px;
+    background-color: #e9e9e9;
+    border-radius: 30px;
+}
+.search:hover{
+    background-color: #e1e1e1;
+}
+.search:focus-within{
+    border: 4px solid #7fc1ff;
+}
+.barra{
+    display: flex;
+    align-items: center;
+    height: 48px;
+}
+#lupa{
+    padding: 13px;
+    color: #767676;
+    font-size: 20px;
+    font-weight: bolder;
+}
+.barra input{
+    border: none;
+    background-color: inherit;
+    padding: 0px 8px 0px 0px;
+    font-size: 16px;
+    flex-grow: 1;
+    outline:none;
+}
+.right-items span{
+    padding: 8px;
+    color: #767676;
+    font-size: 28px;
+}
+.right-items span:hover{
+    background-color: #e9e9e9;
+    border-radius: 150px;
+    cursor: pointer;
+}
+.container{
+    position: absolute;
+    margin-top: 80px;
+}
+.imagenes{
+    columns: 5 240px;
+    margin: auto;
+}
+.card-image{
+    position: relative;
+    padding: 6px;
+}
+.card-image img{
+    border-radius: 16px;
+    min-width: 240px;
+    max-width: 240px;
+}
+.card-image:hover > :first-child{
+    filter: brightness(60%)
+}
+.card-image:hover > *{
+    visibility: visible;
+    display: inline;
+}
+.button{
+    position: absolute;
+    left: 55%;
+    top: 5%;
+    padding: 13px 15px;
+    background-color: #e60023;
+    border-radius: 30px;
+    border: none;
+    visibility: hidden;
+}
+button a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+.oculto1{
+    position: absolute;
+    left: 60%;
+    bottom: 20px;
+    background-color: white;
+    font-size: 30px;
+    border-radius: 50px;
+    color: black;
+    font-weight: bold;
+    padding: 4px;
+    visibility: hidden;
+    display: none;
+}
+.oculto2{
+    position: absolute;
+    left: 78%;
+    bottom: 20px;
+    background-color: white;
+    font-size: 30px;
+    border-radius: 50px;
+    color: black;
+    font-weight: bold;
+    padding: 4px;
+    visibility: hidden;
+    display: none;
+}
